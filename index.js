@@ -6,7 +6,7 @@ export const createScene = function () {
     var camera = new BABYLON.FreeCamera("camera1", new BABYLON.Vector3(-15, 15, -15), scene);
 
     camera.mode = BABYLON.Camera.ORTHOGRAPHIC_CAMERA;
-    const size = 6, aspect = engine.getRenderWidth() / engine.getRenderHeight();
+    const size = 4, aspect = engine.getRenderWidth() / engine.getRenderHeight();
     camera.orthoLeft   = -size * aspect;
     camera.orthoRight  =  size * aspect;
     camera.orthoTop    =  size;
@@ -35,7 +35,7 @@ export const createScene = function () {
         }
         boxes[i] = sub_boxes;
     }
-
+    BABYLON.ImportMeshAsync('assets/simple_zombie.glb', scene);
     // Our built-in 'ground' shape.
     //var ground = BABYLON.MeshBuilder.CreateGround("ground", {width: 16, height: 6}, scene);
 

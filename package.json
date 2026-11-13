@@ -1,23 +1,9 @@
 {
-  "name": "zombulletzoid",
-  "version": "1.0.0",
-  "description": "Project Zomboid, despite its recent changes to gunplay, does not use actual bullet physics. Instead it uses the mouse cursor to do single-zombie targeting. I think that real bullet physics would work better for fighting hordes, and this program's goal is to demonstrate it in an interactable online sim.",
-  "main": "index.js",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/Orangutanion/Zombulletzoid.git"
-  },
-  "keywords": [],
-  "author": "",
-  "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/Orangutanion/Zombulletzoid/issues"
-  },
-  "homepage": "https://github.com/Orangutanion/Zombulletzoid#readme",
   "dependencies": {
-    "babylonjs": "^9.23.0"
+    "vite": "^8.3.8"
+  },
+  "devDependencies": {
+    "@babylonjs/core": "^9.36.0",
+    "@babylonjs/inspector": "^9.36.0"
   }
 }
